@@ -1,0 +1,175 @@
+.services {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: white;
+}
+
+.services h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #111827;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #f5f7ff;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.6;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 16px 20px;
+
+    background: #0d111b;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.navbar a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #4da3ff;
+}
+.header {
+            
+            background-color:  rgba(8, 11, 18, 0.92);
+;
+            color: white;
+            text-align: center;
+            padding: 20px;
+}
+section {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 2px 4px;
+
+}
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(5, 8, 15, 0.70),
+            rgba(5, 8, 15, 0.88)
+        ),
+        url("../images/coded-lifestyle-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*
+        ============================================================
+        DROPDOWN MENU
+        ============================================================
+        */
+
+        /*
+            The dropdown is hidden initially.
+
+            position: absolute:
+            Allows us to position the dropdown under Services.
+
+            top: 100%:
+            Places it directly below the Services link.
+
+            z-index:
+            Makes sure the dropdown appears above other content.
+        */
+        .dropdown-menu {
+            display: none;
+            position: relative;
+            top: 100%;
+            left: 0;
+
+            background-color: #333;
+
+            width: 200px;
+
+            text-align: left;
+
+            z-index: 100;
+        }
+
+
+        /*
+            Dropdown items should appear vertically.
+        */
+        .dropdown-menu li {
+            display: block;
+            width: 100%;
+        }
+
+
+        /*
+            Dropdown links take the full width.
+        */
+        .dropdown-menu a {
+            display: block;
+            padding: 12px 15px;
+        }
+
+
+        /*
+            When the user moves the mouse over .dropdown,
+            display the dropdown menu.
+
+            display: block:
+            Makes the hidden dropdown visible.
+        */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+
+        /*
+        ============
